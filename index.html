@@ -4,211 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Good For Nothing Project</title>
-  <meta name="description" content="Psychological profiling and applied mindfulness." />
-
+  <meta name="description" content="Personality profiling, applied mindfulness, and subversive psychology coaching with Dr. Petar Milojev." />
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     html { scroll-behavior: smooth; }
-
-    .container { max-width: 72rem; }
-
-    body {
-      background: #000;
-      color: #f5f5f0;
-      line-height: 1.6;
-      letter-spacing: -0.01em;
-      font-family: Inter, system-ui, -apple-system, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .display-serif {
-      font-family: Georgia, "Times New Roman", serif;
-      letter-spacing: -0.03em;
-    }
-
-    .text-soft { color: rgba(255,255,255,0.74); }
-    .text-softer { color: rgba(255,255,255,0.5); }
-    .text-faint { color: rgba(255,255,255,0.34); }
-
-    .nav-link {
-      color: rgba(255,255,255,0.6);
-      transition: 0.2s;
-    }
-
-    .nav-link:hover { color: #fff; }
-
-    .hero-title {
-      font-size: clamp(2.8rem, 6vw, 5.8rem);
-      line-height: 0.95;
-    }
-
-    .section-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: rgba(255,255,255,0.4);
-    }
-
-    .cta-button {
-      background: #f5f5f0;
-      color: #000;
-      transition: 0.2s;
-    }
-
-    .cta-button:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
-    }
-
-    .divider {
-      height: 1px;
-      background: rgba(255,255,255,0.1);
-      width: 100%;
-    }
-
-    .editorial-copy p + p {
-      margin-top: 1rem;
-    }
+    :root { --bg:#050505; --ink:#f5f2ea; --soft:rgba(245,242,234,.74); --softer:rgba(245,242,234,.54); --faint:rgba(245,242,234,.32); --line:rgba(245,242,234,.12); }
+    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.6; letter-spacing:-.012em; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing:antialiased; }
+    .container { max-width: 74rem; }
+    .display-serif { font-family: Georgia, "Times New Roman", serif; letter-spacing:-.04em; }
+    .text-soft { color:var(--soft); } .text-softer{color:var(--softer);} .text-faint{color:var(--faint);} .line{border-color:var(--line);} .bg-panel{background:rgba(255,255,255,.035);} 
+    .hero-title { font-size:clamp(3.1rem, 7vw, 7rem); line-height:.9; }
+    .section-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.18em; color:var(--faint); }
+    .nav-link { color:var(--softer); transition:.18s ease; } .nav-link:hover{color:var(--ink);} 
+    .cta-primary { background:var(--ink); color:#050505; } .cta-secondary { border:1px solid var(--line); color:var(--ink); }
+    .cta-primary,.cta-secondary { transition:.18s ease; } .cta-primary:hover,.cta-secondary:hover { transform:translateY(-1px); opacity:.88; }
+    .editorial p + p { margin-top:1rem; }
+    .hairline { height:1px; background:var(--line); width:100%; }
+    .card { border:1px solid var(--line); background:rgba(255,255,255,.025); border-radius:1.25rem; }
   </style>
 </head>
-
 <body>
-
-<header class="sticky top-0 backdrop-blur bg-black/70 border-b border-white/10">
-  <nav class="container mx-auto px-4 flex items-center justify-between h-16">
-    <a class="text-white font-medium" href="#home">
-      The Good For Nothing Project
-    </a>
-
-    <div class="hidden md:flex gap-6 text-sm">
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#start">Start</a>
-      <a class="nav-link" href="#work">Work</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
-
-<section id="home">
-  <div class="container mx-auto px-4 py-24 grid md:grid-cols-2 gap-16">
-
-    <div class="space-y-8">
-      <div class="section-label">Psychological profiler</div>
-
-      <h1 class="hero-title display-serif">
-        The Good For Nothing Project
-      </h1>
-
-      <p class="text-lg text-soft max-w-xl">
-        I help people see themselves as they are—
-        and work with what they find.
-      </p>
-
-      <a href="#contact" class="inline-block px-5 py-2 rounded-xl text-sm cta-button">
-        Get in touch
-      </a>
-    </div>
-
-    <div id="start">
-      <div class="section-label mb-6">Start</div>
-
-      <div class="editorial-copy text-soft max-w-xl">
-        <p>Most of us don’t see the lens we’re looking through.</p>
-
-        <p>
-          Not because it’s hidden—<br>
-          but because we’re inside it.
-        </p>
-
-        <p>
-          We don’t see that we are the lens<br>
-          through which everything is experienced.
-        </p>
-
-        <p>
-          The way we think.<br>
-          What we notice and ignore.<br>
-          How we react.<br>
-          What feels obvious, true, or justified.
-        </p>
-
-        <p>It doesn’t feel like a pattern.</p>
-        <p>It feels like reality.</p>
-
-        <p class="text-white">That’s where we start.</p>
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/70 border-b line">
+    <nav class="container mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#home" class="text-sm tracking-tight">The Good For Nothing Project</a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a class="nav-link" href="#profiling">Profiling</a>
+        <a class="nav-link" href="#coaching">Coaching</a>
+        <a class="nav-link" href="https://code-replacer--petarmilojev.replit.app/" target="_blank" rel="noopener">Profile app</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="container mx-auto px-5 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-end">
+      <div class="md:col-span-8 space-y-8">
+        <div class="section-label">Profiling · Applied Mindfulness · Subversive Psychology</div>
+        <h1 class="hero-title display-serif">See the pattern.<br/>Train the response.</h1>
+        <p class="text-soft text-xl max-w-2xl">The Good For Nothing Project is one-to-one coaching and psychological profiling for people who are tired of being run by reactivity, avoidance, self-deception, and all the other small administrative disasters of being alive.</p>
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://code-replacer--petarmilojev.replit.app/" target="_blank" rel="noopener" class="cta-primary inline-flex justify-center px-5 py-3 rounded-xl text-sm font-medium">Open the personality profile</a>
+          <a href="#contact" class="cta-secondary inline-flex justify-center px-5 py-3 rounded-xl text-sm">Start a conversation</a>
+        </div>
+      </div>
+      <aside class="md:col-span-4 card p-6 text-sm text-soft">
+        <div class="section-label mb-4">Start here</div>
+        <p>Most people do not need more information. They need a better way to see what is already happening — and enough attentional skill to stop obeying it automatically.</p>
+      </aside>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <section class="container mx-auto px-5 py-20 grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-4"><div class="section-label mb-4">What this is</div><h2 class="display-serif text-4xl md:text-5xl leading-tight">Not therapy.<br/>Not wellness theatre.</h2></div>
+      <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
+        <p>This is training. It combines personality science, direct attentional practice, and applied behavioural work.</p>
+        <p>Profiling helps us map the recurring structure: how you tend to think, feel, defend, pursue, avoid, collapse, perform, overreach, withdraw, or pretend not to care.</p>
+        <p>Applied mindfulness gives you the practical capacity to observe experience clearly while it is happening. Subversive psychology asks the less flattering question: what is this pattern doing for you, what is it costing you, and what would it mean to stop serving it?</p>
+      </div>
+    </section>
+
+    <section id="profiling" class="container mx-auto px-5 py-20 border-t line">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4"><div class="section-label mb-4">Profiling</div><h2 class="display-serif text-4xl md:text-5xl leading-tight">A map of the lens.</h2></div>
+        <div class="md:col-span-8 grid sm:grid-cols-2 gap-5">
+          <div class="card p-6"><h3 class="text-white text-lg mb-3">Personality structure</h3><p class="text-soft">We use trait-based profiling to identify patterns in motivation, emotional reactivity, discipline, openness, interpersonal style, and self-management.</p></div>
+          <div class="card p-6"><h3 class="text-white text-lg mb-3">Pattern interactions</h3><p class="text-soft">The value is rarely in one score. It is in the arrangement: where strengths become traps, where vulnerabilities cluster, and where life keeps producing the same lesson with worse handwriting.</p></div>
+          <div class="card p-6"><h3 class="text-white text-lg mb-3">Narrative feedback</h3><p class="text-soft">Results are translated into plain psychological language: not labels, not diagnoses, but useful working hypotheses for self-inquiry and behaviour change.</p></div>
+          <div class="card p-6"><h3 class="text-white text-lg mb-3">Practice recommendations</h3><p class="text-soft">The profile points toward training: what to observe, what to practise, and where discomfort is most likely to hijack the steering wheel. <a class="underline underline-offset-4 hover:text-white" href="https://code-replacer--petarmilojev.replit.app/" target="_blank" rel="noopener">The profile app is available here.</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coaching" class="container mx-auto px-5 py-20 border-t line">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4"><div class="section-label mb-4">Coaching</div><h2 class="display-serif text-4xl md:text-5xl leading-tight">Skillful discomfort.<br/>In real life.</h2></div>
+        <div class="md:col-span-8 editorial text-soft max-w-3xl">
+          <p>Coaching is built around direct practice, weekly work, and the live material of your life. Not motivational performance. Not endless insight collection. Not beautifully phrased avoidance.</p>
+          <p>We train attention across internal experience — thoughts, emotions, images, urges — and external experience — body, sound, sight, action, relationship, pressure. The aim is not to become calm. The aim is to become available to reality while it is inconvenient.</p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-8 text-sm">
+            <div class="card p-5"><div class="section-label mb-3">01</div><p class="text-white">Map the pattern.</p></div>
+            <div class="card p-5"><div class="section-label mb-3">02</div><p class="text-white">Train attention.</p></div>
+            <div class="card p-5"><div class="section-label mb-3">03</div><p class="text-white">Apply it where you usually flinch.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5 py-20 border-t line">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4"><div class="section-label mb-4">Who it is for</div><h2 class="display-serif text-4xl md:text-5xl leading-tight">Serious people.<br/>Not necessarily severe ones.</h2></div>
+        <div class="md:col-span-8 grid sm:grid-cols-2 gap-5 text-soft">
+          <div class="card p-6">People who prefer practice over inspiration.</div>
+          <div class="card p-6">Parents, professionals, athletes, and builders of difficult lives.</div>
+          <div class="card p-6">People willing to look at their own part in their own suffering.</div>
+          <div class="card p-6">People who want a private, direct, unsentimental space to work honestly.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-5 py-24 border-t line">
+      <div class="max-w-2xl">
+        <div class="section-label mb-4">Contact</div>
+        <h2 class="display-serif text-4xl md:text-5xl mb-6">A short message is enough.</h2>
+        <p class="text-soft text-lg mb-8">Tell me what is happening, what keeps repeating, or what you are hoping to train. We will figure out quickly whether this is a fit.</p>
+        <a class="underline underline-offset-4 hover:text-white text-lg" href="mailto:petar@thegoodfornothingproject.org">petar@thegoodfornothingproject.org</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t line">
+    <div class="container mx-auto px-5 h-20 flex items-center justify-between text-sm text-faint">
+      <p>© <span id="year"></span> The Good For Nothing Project</p>
+      <a href="#home" class="hover:text-white">Back to top</a>
     </div>
-
-  </div>
-</section>
-
-<section id="work">
-  <div class="container mx-auto px-4">
-    <div class="divider"></div>
-  </div>
-
-  <div class="container mx-auto px-4 py-20 grid md:grid-cols-3 gap-10">
-    <div>
-      <div class="section-label mb-4">Work</div>
-
-      <h2 class="display-serif text-3xl">
-        What this is
-      </h2>
-    </div>
-
-    <div class="md:col-span-2 editorial-copy text-soft max-w-2xl">
-      <p>This isn’t about fixing yourself.</p>
-
-      <p>
-        It’s about being able to stay with what’s there—
-        and work with it.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container mx-auto px-4">
-    <div class="divider"></div>
-  </div>
-
-  <div class="container mx-auto px-4 py-20">
-
-    <div class="section-label mb-4">Contact</div>
-
-    <h2 class="display-serif text-3xl mb-4">
-      Get in touch
-    </h2>
-
-    <p class="text-soft max-w-xl">
-      If this makes sense to you, reach out.
-    </p>
-
-    <p class="mt-6">
-      <a class="underline hover:text-white" href="mailto:petar@thegoodfornothingproject.org">
-        petar@thegoodfornothingproject.org
-      </a>
-    </p>
-
-    <div class="mt-10 text-softer max-w-xl">
-      <p>A short message is enough.</p>
-      <p>We’ll figure out quickly if it’s a fit.</p>
-    </div>
-
-  </div>
-</section>
-
-<footer class="border-t border-white/10">
-  <div class="container mx-auto px-4 h-20 flex items-center justify-between text-sm text-faint">
-    <p>© <span id="year"></span> The Good For Nothing Project</p>
-    <a href="#home" class="hover:text-white">Back to top</a>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
