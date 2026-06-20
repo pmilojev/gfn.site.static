@@ -22,6 +22,10 @@
     .editorial p + p { margin-top:1rem; }
     .hairline { height:1px; background:var(--line); width:100%; }
     .card { border:1px solid var(--line); background:rgba(255,255,255,.025); border-radius:1.25rem; }
+    .tag { font-size:.78rem; color:var(--softer); border:1px solid var(--line); border-radius:999px; padding:.35rem .85rem; display:inline-block; }
+    .value-row { border-top:1px solid var(--line); }
+    .value-row:last-child { border-bottom:1px solid var(--line); }
+    .num { font-family: Georgia, serif; color:var(--faint); font-size:.85rem; }
   </style>
 </head>
 <body>
@@ -31,8 +35,11 @@
       <a href="#home" class="text-sm tracking-tight">The Good For Nothing Project</a>
       <div class="hidden md:flex gap-6 text-sm">
         <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#mechanism">The Problem</a>
         <a class="nav-link" href="#profiling">Profiling</a>
         <a class="nav-link" href="#coaching">Coaching</a>
+        <a class="nav-link" href="#who">Who It's For</a>
+        <a class="nav-link" href="#values">Values</a>
         <a class="nav-link" href="#writing">Writing</a>
         <a class="nav-link" href="https://holistic-overview.replit.app" target="_blank" rel="noopener">Profile app</a>
         <a class="nav-link" href="#contact">Contact</a>
@@ -43,20 +50,16 @@
   <main id="home">
 
     <!-- HERO -->
-    <section class="container mx-auto px-5 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-end">
-      <div class="md:col-span-8 space-y-8">
+    <section class="container mx-auto px-5 py-24 md:py-32">
+      <div class="max-w-3xl space-y-8">
         <div class="section-label">Profiling · Applied Mindfulness · Subversive Psychology</div>
         <h1 class="hero-title display-serif">What do you think you are? </h1>
-        <p class="text-soft text-xl max-w-2xl">The Good For Nothing Project is one-to-one coaching and psychological profiling for people who are tired of being run by reactivity, avoidance, self-deception, and all the other small administrative disasters of being alive.</p>
+        <p class="text-soft text-xl max-w-2xl">The Good For Nothing Project is one-to-one coaching and psychological profiling. Practice, not inspiration. For people who want to stop running on automatic.</p>
         <div class="flex flex-col sm:flex-row gap-3 pt-2">
           <a href="https://holistic-overview.replit.app" target="_blank" rel="noopener" class="cta-primary inline-flex justify-center px-5 py-3 rounded-xl text-sm font-medium">Free personality profile</a>
           <a href="#contact" class="cta-secondary inline-flex justify-center px-5 py-3 rounded-xl text-sm">Start a conversation</a>
         </div>
       </div>
-      <aside class="md:col-span-4 card p-6 text-sm text-soft">
-        <div class="section-label mb-4">Start here</div>
-        <p>Most of us do not need more information. We need a better way to see what is already happening — and enough attentional skill to stop obeying it automatically.</p>
-      </aside>
     </section>
 
     <section class="container mx-auto px-5"><div class="hairline"></div></section>
@@ -68,10 +71,29 @@
         <h2 class="display-serif text-4xl md:text-5xl leading-tight">Not therapy.<br/>Not wellness theatre.</h2>
       </div>
       <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
-        <p>This is training. It combines personality profiling, direct attentional practice, and applied behavioural work.</p>
+        <p>This is training. It works on three fronts at once: psychological profiling, direct mindfulness practice, and applied behavioural work — what you actually do, say, and think in real life.</p>
         <p>Profiling maps the recurring structure: how you tend to think, feel, defend, pursue, avoid, collapse, perform, overreach, withdraw, or pretend not to care. It shows where your personality produces specific patterns of suffering and avoidance — and where the same traits, met differently, become genuine strengths.</p>
-        <p>Applied mindfulness develops the practical capacity to observe experience clearly while it is happening — to meet difficulty without automatically obeying it. The aim is not to feel better. The aim is to become less easy to overwhelm, and more capable of honest action under pressure.</p>
+        <p>Mindfulness develops the practical capacity to observe experience clearly while it is happening — to meet difficulty without automatically obeying it.</p>
+        <p>And then there is the part most approaches leave out: applying that capacity to how you actually act, speak, and decide — in real life, with real stakes. The aim is not to feel better. The aim is to become less easy to overwhelm, and more capable of honest action under pressure.</p>
         <p class="text-faint text-base mt-6 italic">On the name: "good for nothing" is not self-deprecation. It is a position. The work is not good for any specific outcome in the transactional sense — not for happiness, not for success, not for the elimination of difficulty. It develops a capacity that is then available regardless of circumstances. Which turns out to be good for everything.</p>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- MECHANISM -->
+    <section id="mechanism" class="container mx-auto px-5 py-20">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <div class="section-label mb-4">Why the usual approaches stall</div>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Your attempts to fix it are part of what's keeping it alive.</h2>
+        </div>
+        <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
+          <p>Most anxiety, panic, and stuck patterns are not made of a bad experience. They are made of attention that has gotten stuck on an experience that, on its own, would have passed. Two hard things felt clearly, one after another, are two hard things. Two hard things fused together, each pulling at the other, are not twice as bad. They multiply.</p>
+          <p>This is what anxiety, panic, phobia, and most compulsive and addictive patterns actually are: an experience that has never been fully met, because every time it shows up, something in you moves to manage it, explain it, avoid it, or shut it down. Your attempts to fix it are a part of it. The thing you're dealing with is, in no small part, made of your attempts to fix it.</p>
+          <p>This is usually why conventional approaches plateau. Therapy, medication, and most coaching work around the experience — with its history, its meaning, its management. That is genuine and often necessary work. But the felt thing itself, underneath the explanation, often goes untouched.</p>
+          <p>The work here, in plain terms, is to stop fixing and stop defending — on purpose, systematically — and to meet the experience instead. Attended to fully, as it actually is, it can finally be fully had. And what has been fully had stops needing to be fought.</p>
+        </div>
       </div>
     </section>
 
@@ -87,7 +109,7 @@
           <p>I pursued it first through academic psychology — personality research, psychometrics, and large-scale behavioural studies across multiple institutions and countries. I have an actual PhD in personality assessment and over a decade of applied work using personality profiling and development in organisational and individual contexts. That work gives you a rigorous account of the person from the outside: stable traits, characteristic patterns, statistically predictable tendencies.</p>
           <p>It turned out to be necessary but not sufficient. The outside view tells you where the grooves are. It doesn't tell you how to work with them.</p>
           <p>That took a different kind of investigation — about a decade of serious study and practice in mindfulness and contemplative traditions, working with direct experience rather than statistical models of it.</p>
-          <p>The Good For Nothing Project is where those two paths meet. The profiling provides the map. The attentional training provides the path.</p>
+          <p>The Good For Nothing Project is where those paths meet: profiling gives the map, mindfulness gives the path, and the day-to-day work of acting, speaking, and deciding is where the two actually get tested.</p>
           <p class="text-softer text-sm mt-4">I am not a therapist and this is not therapy. If that is what you need, I will say so clearly and point you toward it.</p>
         </div>
       </div>
@@ -103,8 +125,10 @@
           <h2 class="display-serif text-4xl md:text-5xl leading-tight">A map of the lens.</h2>
         </div>
         <div class="md:col-span-8 editorial text-soft max-w-3xl">
-          <p>Trait-based personality profiling maps how you tend to think, feel, defend, and behave — not as a diagnosis, but as a working hypothesis for where the real friction is and where the real leverage is.</p>
+          <p>Psychological profiling maps how you tend to think, feel, defend, and behave — not as a diagnosis, but as a working hypothesis for where the real friction is and where the real leverage is.</p>
+          <p>What it tends to show is that the most fixed parts of how you operate — the traits you'd call your character, even the ones you're proud of — are usually organised defensively. Built to protect something. Which is also, often, where they cost the most.</p>
           <p>The value is rarely in one dimension. It is in the arrangement: where strengths become traps, where vulnerabilities cluster, and where life keeps producing the same lesson with worse handwriting. The profile is translated into plain language and connected directly to practice — what to train, and where.</p>
+          <p class="text-softer text-base">This isn't a one-time test. It keeps developing through the work itself — what you actually do, avoid, and prioritise tells us more than any questionnaire, and it shapes which practices and which work come next.</p>
           <p class="mt-4"><a class="underline underline-offset-4 hover:text-white" href="https://holistic-overview.replit.app" target="_blank" rel="noopener">The profile app is available here.</a></p>
         </div>
       </div>
@@ -122,6 +146,7 @@
         <div class="md:col-span-8 editorial text-soft max-w-3xl">
           <p>Coaching is built around direct practice, weekly work, and the live material of your life. Not motivational performance. Not endless insight collection. Not beautifully phrased avoidance.</p>
           <p>We train attention across internal experience — thoughts, emotions, images, urges — and external experience — body, sound, sight, action, relationship, pressure. The aim is not to become calm. The aim is to become available to reality while it is inconvenient.</p>
+          <p>And then the practice has to work in real life. How you decide. What you actually say in the conversation you've been avoiding. What you do in the half-second before the old pattern takes over. This is where most approaches stop and where this one keeps going.</p>
           <div class="grid sm:grid-cols-3 gap-4 mt-8 text-sm">
             <div class="card p-5"><div class="section-label mb-3">01</div><p class="text-white">Map the pattern.</p></div>
             <div class="card p-5"><div class="section-label mb-3">02</div><p class="text-white">Train attention.</p></div>
@@ -134,17 +159,115 @@
     <section class="container mx-auto px-5"><div class="hairline"></div></section>
 
     <!-- WHO IT IS FOR -->
-    <section class="container mx-auto px-5 py-20">
+    <section id="who" class="container mx-auto px-5 py-20">
       <div class="grid md:grid-cols-12 gap-12">
         <div class="md:col-span-4">
           <div class="section-label mb-4">Who it is for</div>
-          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Serious people.<br/>Not necessarily severe ones.</h2>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Sincere people.<br/>Not necessarily serious ones.</h2>
         </div>
-        <div class="md:col-span-8 grid sm:grid-cols-2 gap-5 text-soft">
-          <div class="card p-6">People who are aware enough to know something is wrong and honest enough to admit that information alone isn't fixing it.</div>
-          <div class="card p-6">High-functioning people who perform well in the world and are quietly miserable inside it.</div>
-          <div class="card p-6">People who have tried the standard approaches and found them insufficient — not because those approaches are bad, but because the problem is not what they thought it was.</div>
-          <div class="card p-6">Parents, professionals, athletes, and builders of difficult lives who want a private, direct, unsentimental space to work honestly.</div>
+        <div class="md:col-span-8 space-y-10">
+
+          <div>
+            <div class="text-softer text-sm mb-3">Most people arrive here having already tried something else — therapy, medication, other coaching — and found that whatever shifted, the thing itself didn't fully move. This is for:</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="tag">Anxiety — general, social, specific</span>
+              <span class="tag">Phobias &amp; fears</span>
+              <span class="tag">Panic</span>
+              <span class="tag">Compulsive &amp; addictive patterns</span>
+              <span class="tag">Stress &amp; pressure</span>
+              <span class="tag">Low mood &amp; depressiveness</span>
+              <span class="tag">Trauma loops &amp; intrusive patterns</span>
+              <span class="tag">Chronic dissatisfaction</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-softer text-sm mb-3">Others arrive functional and capable, looking to build something most people never train deliberately:</div>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="tag">Performance &amp; performance anxiety</span>
+              <span class="tag">Decision-making under pressure</span>
+              <span class="tag">Self-trust &amp; confidence</span>
+              <span class="tag">Boldness &amp; courage</span>
+              <span class="tag">Clarity of thinking</span>
+              <span class="tag">Relational difficulty</span>
+              <span class="tag">Parenting &amp; fatherhood</span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5 text-soft pt-2">
+            <div class="card p-6">People who are aware enough to know something is wrong and honest enough to admit that information alone isn't fixing it.</div>
+            <div class="card p-6">High-functioning people who perform well in the world and are quietly miserable inside it.</div>
+            <div class="card p-6">People who have tried the standard approaches and found them insufficient — not because those approaches are bad, but because the problem is not what they thought it was.</div>
+            <div class="card p-6">Parents, professionals, athletes, and builders of difficult lives who want a private, direct, unsentimental space to work honestly.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- VALUES -->
+    <section id="values" class="container mx-auto px-5 py-20">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <div class="section-label mb-4">What this moves toward</div>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Not values to adopt.<br/>Conditions the work creates.</h2>
+          <p class="text-softer text-sm mt-6 max-w-xs">These aren't a checklist or a sermon. They're what tends to show up as the training takes hold — and what makes it possible to find your own, instead of someone else's.</p>
+        </div>
+        <div class="md:col-span-8">
+          <div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">01</div>
+              <div class="col-span-3 text-white text-sm">Presence</div>
+              <div class="col-span-8 text-softer text-sm">I am fully here.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">02</div>
+              <div class="col-span-3 text-white text-sm">Openness</div>
+              <div class="col-span-8 text-softer text-sm">I receive experience as it is, without fighting it.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">03</div>
+              <div class="col-span-3 text-white text-sm">Courage</div>
+              <div class="col-span-8 text-softer text-sm">I move toward what is hard and true.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">04</div>
+              <div class="col-span-3 text-white text-sm">Truthfulness</div>
+              <div class="col-span-8 text-softer text-sm">I say and think the real thing.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">05</div>
+              <div class="col-span-3 text-white text-sm">Integrity</div>
+              <div class="col-span-8 text-softer text-sm">I act whole, without half-measures.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">06</div>
+              <div class="col-span-3 text-white text-sm">Responsibility</div>
+              <div class="col-span-8 text-softer text-sm">I own my part.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">07</div>
+              <div class="col-span-3 text-white text-sm">Simplicity</div>
+              <div class="col-span-8 text-softer text-sm">I move toward what is clear, not what is dressed up.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">08</div>
+              <div class="col-span-3 text-white text-sm">Humility</div>
+              <div class="col-span-8 text-softer text-sm">I hold my own perspective lightly.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">09</div>
+              <div class="col-span-3 text-white text-sm">Compassion</div>
+              <div class="col-span-8 text-softer text-sm">I move toward others without making it about me.</div>
+            </div>
+            <div class="value-row grid grid-cols-12 gap-4 py-4 items-baseline">
+              <div class="col-span-1 num">10</div>
+              <div class="col-span-3 text-white text-sm">Service</div>
+              <div class="col-span-8 text-softer text-sm">My work moves toward something beyond myself.</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -158,7 +281,7 @@
           <div class="section-label mb-4">Writing &amp; Practice</div>
           <h2 class="display-serif text-4xl md:text-5xl leading-tight">The work,<br/>in long form.</h2>
         </div>
-        <div class="md:col-span-8 editorial text-soft max-w-3xl">
+        <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
           <p>Occasional long-form articles and audio recordings on the core ideas — anxiety, attention, suffering, identity, training, and what any of it is actually for. Not content. Not inspiration. Just the clearest articulation of the work I can manage at the time of writing.</p>
           <p>Also available on YouTube: a series of introductory guided practices — short, direct, and without ceremony. A reasonable place to encounter what the training actually feels like before committing to anything.</p>
           <div class="mt-8 flex flex-col sm:flex-row gap-3">
