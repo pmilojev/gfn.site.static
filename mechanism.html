@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your attempts to fix it are part of it — The Good For Nothing Project</title>
+  <meta name="description" content="The problematic-ness of a problem isn't inherent to it. It's made, in large part, of your attempts to fix it. Why understanding doesn't resolve anxiety, and what does." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    :root { --bg:#050505; --ink:#f5f2ea; --soft:rgba(245,242,234,.74); --softer:rgba(245,242,234,.54); --faint:rgba(245,242,234,.32); --line:rgba(245,242,234,.12); }
+    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.6; letter-spacing:-.012em; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing:antialiased; }
+    .container { max-width: 74rem; }
+    .display-serif { font-family: Georgia, "Times New Roman", serif; letter-spacing:-.04em; }
+    .text-soft { color:var(--soft); } .text-softer{color:var(--softer);} .text-faint{color:var(--faint);}
+    .line{border-color:var(--line);} .bg-panel{background:rgba(255,255,255,.035);}
+    .article-title { font-size:clamp(2.4rem, 5.5vw, 4.2rem); line-height:1.04; }
+    .section-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.18em; color:var(--faint); }
+    .nav-link { color:var(--softer); transition:.18s ease; } .nav-link:hover{color:var(--ink);}
+    .cta-primary { background:var(--ink); color:#050505; } .cta-secondary { border:1px solid var(--line); color:var(--ink); }
+    .cta-primary,.cta-secondary { transition:.18s ease; } .cta-primary:hover,.cta-secondary:hover { transform:translateY(-1px); opacity:.88; }
+    .hairline { height:1px; background:var(--line); width:100%; }
+    .article p { margin-top:1.4rem; font-size:1.2rem; color:var(--soft); }
+    .article p:first-of-type { margin-top:0; }
+    .article p.lede { font-size:1.35rem; color:var(--ink); }
+  </style>
+</head>
+<body>
+
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/70 border-b line">
+    <nav class="container mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="/" class="text-sm tracking-tight">The Good For Nothing Project</a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a class="nav-link" href="/#who">Who It's For</a>
+        <a class="nav-link" href="/#writing">Writing</a>
+        <a class="nav-link" href="https://holistic-overview.replit.app" target="_blank" rel="noopener">Profile app</a>
+        <a class="nav-link" href="/#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <article class="container mx-auto px-5 py-20 md:py-28">
+      <div class="max-w-2xl mx-auto">
+
+        <div class="section-label mb-6">Why the usual approaches stall</div>
+        <h1 class="article-title display-serif mb-10">Your attempts to fix it are part of it.</h1>
+
+        <div class="article">
+          <p class="lede">You've probably tried to understand your anxiety. Therapy, maybe medication, maybe just years of working on it. The understanding helped. It didn't make the thing go away.</p>
+
+          <p>Here's why, probably.</p>
+
+          <p>The problematic-ness of a problem isn't inherent to it. It's made, in large part, of your attempts to fix it. Every time something hard shows up and you move to manage it, explain it, or shut it down, that move doesn't shrink the thing — it becomes part of it. Two hard things felt clearly are two hard things. A hard thing fused with your bracing against it is something else. It multiplies.</p>
+
+          <p>You don't usually see this happening, because seeing it requires attention — and the bracing is itself a form of distraction. It's one more thing pulling focus away from what's actually here. So the fixing keeps running, unnoticed, doing exactly the opposite of what it's for.</p>
+
+          <p>The alternative is simple to say and hard to do: stop fixing it. Meet the experience directly instead — fully, on purpose, with real attention. Most people never do this, not because it's complicated, but because everything in us moves the other way the moment something hard shows up.</p>
+
+          <p>Met this way, the same experience stops being damaging. Not because it's gone. Because the damage was never made of the experience — it was made of the bracing wrapped around it.</p>
+
+          <p>This is most of what the work at The Good For Nothing Project actually is.</p>
+        </div>
+
+        <div class="hairline my-12"></div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/" class="cta-primary inline-flex justify-center px-5 py-3 rounded-xl text-sm font-medium">More about the work</a>
+          <a href="https://holistic-overview.replit.app" target="_blank" rel="noopener" class="cta-secondary inline-flex justify-center px-5 py-3 rounded-xl text-sm">Free personality profile</a>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="border-t line mt-12">
+    <div class="container mx-auto px-5 h-20 flex items-center justify-between text-sm text-faint">
+      <p>© <span id="year"></span> The Good For Nothing Project · Dr. Petar Milojev</p>
+      <a href="/" class="hover:text-white">Back to home</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
