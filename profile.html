@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Free Personality Profile — The Good For Nothing Project</title>
+  <meta name="description" content="A free, rigorous personality assessment — a real 120-item HEXACO instrument with percentile scoring and a plain-language overview. A map of the lens you see your life through." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    :root { --bg:#050505; --ink:#f5f2ea; --soft:rgba(245,242,234,.74); --softer:rgba(245,242,234,.54); --faint:rgba(245,242,234,.32); --line:rgba(245,242,234,.12); }
+    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.6; letter-spacing:-.012em; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing:antialiased; }
+    .container { max-width: 74rem; }
+    .display-serif { font-family: Georgia, "Times New Roman", serif; letter-spacing:-.04em; }
+    .text-soft { color:var(--soft); } .text-softer{color:var(--softer);} .text-faint{color:var(--faint);}
+    .line{border-color:var(--line);} .bg-panel{background:rgba(255,255,255,.035);}
+    .hero-title { font-size:clamp(2.6rem, 6vw, 5rem); line-height:1.0; }
+    .section-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.18em; color:var(--faint); }
+    .nav-link { color:var(--softer); transition:.18s ease; } .nav-link:hover{color:var(--ink);}
+    .cta-primary { background:var(--ink); color:#050505; } .cta-secondary { border:1px solid var(--line); color:var(--ink); }
+    .cta-primary,.cta-secondary { transition:.18s ease; } .cta-primary:hover,.cta-secondary:hover { transform:translateY(-1px); opacity:.88; }
+    .editorial p + p { margin-top:1rem; }
+    .hairline { height:1px; background:var(--line); width:100%; }
+    .card { border:1px solid var(--line); background:rgba(255,255,255,.025); border-radius:1.25rem; }
+    .tag { font-size:.78rem; color:var(--softer); border:1px solid var(--line); border-radius:999px; padding:.35rem .85rem; display:inline-block; }
+    .stat { font-family: Georgia, serif; font-size:2rem; color:var(--ink); line-height:1; }
+  </style>
+</head>
+<body>
+
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/70 border-b line">
+    <nav class="container mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="/" class="text-sm tracking-tight">The Good For Nothing Project</a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a class="nav-link" href="/mechanism">Mechanism</a>
+        <a class="nav-link" href="/training">How It Works</a>
+        <a class="nav-link" href="/#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="container mx-auto px-5 py-20 md:py-28">
+      <div class="max-w-3xl">
+        <div class="section-label mb-6">Free · Anonymous · No login</div>
+        <h1 class="hero-title display-serif mb-8">A map of the lens you see your life through.</h1>
+        <p class="text-soft text-xl max-w-2xl mb-10">A real personality assessment — not a quiz. Twenty minutes, a structured score, and a plain-language read on patterns most people only half-notice in themselves.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="https://holistic-overview.replit.app" target="_blank" rel="noopener" class="cta-primary inline-flex justify-center px-6 py-3.5 rounded-xl text-sm font-medium">Take the free profile</a>
+          <a href="#what-it-is" class="cta-secondary inline-flex justify-center px-6 py-3.5 rounded-xl text-sm">What it actually is</a>
+        </div>
+        <p class="text-faint text-xs mt-5 max-w-xl">Built on the open IPIP HEXACO item pool, with provisional norms from a large anonymous online dataset — not the official HEXACO-PI-R instrument. More on that below.</p>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- WHAT IT IS -->
+    <section id="what-it-is" class="container mx-auto px-5 py-20 grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-4">
+        <div class="section-label mb-4">What it is</div>
+        <h2 class="display-serif text-4xl md:text-5xl leading-tight">A real instrument.<br/>Not a quiz.</h2>
+      </div>
+      <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
+        <p>This is a full HEXACO personality assessment — 120 scored items across six broad domains and twenty-four underlying facets, with your results placed against a normative sample so you can see where you actually sit, not just what your raw answers were.</p>
+        <p>HEXACO is one of the more rigorous trait models in personality science — it captures what trait-based profiling reliably can: how you tend to think, feel, defend, pursue, avoid, and relate, across consistent and well-studied dimensions. It does not diagnose you, type you, or sort you into a category. It maps tendencies, not a verdict.</p>
+        <p>You'll get a plain-language overview of your results — not just numbers, but what those numbers tend to mean in how a person actually lives, where the strengths in a pattern tend to double as costs, and where the same trait shows up differently depending on what it's pointed at.</p>
+        <p class="text-faint text-base mt-6 italic">It's free, genuinely anonymous, and there's no login or signup. Nothing is stored on our side. You can download your results as a PDF or raw data at the end.</p>
+        <p class="text-faint text-sm mt-4">A note on the instrument itself: this tool is built on the open International Personality Item Pool (IPIP) HEXACO item set — a validated proxy for the HEXACO model, not the official, copyrighted HEXACO-PI-R instrument. Your percentile scores are calculated against provisional norms from a large anonymous online dataset, not a clinical or nationally representative sample. This is a free, non-commercial, exploratory tool — useful for self-reflection and coaching preparation, not a clinical, diagnostic, or selection instrument.</p>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- THE SIX DOMAINS -->
+    <section class="container mx-auto px-5 py-20">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <div class="section-label mb-4">What it measures</div>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Six domains.<br/>Twenty-four facets.</h2>
+        </div>
+        <div class="md:col-span-8 grid sm:grid-cols-2 gap-5 text-soft">
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Honesty-Humility</div>
+            <p class="text-sm">How you relate to status, advantage, and special treatment — especially when there's something to gain and no one's watching.</p>
+          </div>
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Emotionality</div>
+            <p class="text-sm">Sensitivity to threat, loss, and vulnerability — the volume of the internal signal that says <em>this matters, don't ignore it.</em></p>
+          </div>
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Extraversion</div>
+            <p class="text-sm">How much energy and reward you draw from engagement with the world — people, activity, visibility, momentum.</p>
+          </div>
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Agreeableness</div>
+            <p class="text-sm">What happens when friction shows up: patience or irritation, accommodation or resistance, letting go or holding on.</p>
+          </div>
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Conscientiousness</div>
+            <p class="text-sm">How tightly behaviour is organised around structure, standards, effort, and delayed reward.</p>
+          </div>
+          <div class="card p-6">
+            <div class="text-white text-sm font-medium mb-2">Openness to Experience</div>
+            <p class="text-sm">Appetite for novelty, complexity, ambiguity, and ways of seeing that aren't the obvious or familiar ones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- LIMITS / HONEST FRAMING -->
+    <section class="container mx-auto px-5 py-20">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <div class="section-label mb-4">What it isn't</div>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">Useful.<br/>Not enough.</h2>
+        </div>
+        <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
+          <p>This is an outside view — a structured snapshot of patterns in how you tend to think, react, relate, avoid, and pursue. It is genuinely useful as that. It is not, and cannot be, the whole picture.</p>
+          <p>It doesn't show how these patterns actually play out in the specific conditions of your life. It doesn't show what maintains them, where they protect you, where they cost you, or how to work with them in real time. That work can't be done from the outside, and a report — however accurate — can't do it for you.</p>
+          <p>If something in your results feels accurate, uncomfortable, or hard to dismiss, that's usually where the real work begins, not where it ends.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- HOW IT FITS THE WORK -->
+    <section class="container mx-auto px-5 py-20">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <div class="section-label mb-4">Where this fits</div>
+          <h2 class="display-serif text-4xl md:text-5xl leading-tight">The map,<br/>not the path.</h2>
+        </div>
+        <div class="md:col-span-8 editorial text-soft text-lg max-w-3xl">
+          <p>Profiling is one of three things this work runs on, alongside direct mindfulness training and applied behavioural work. The profile gives a working hypothesis for where the real friction is and where the real leverage is — not as a diagnosis, but as a starting hypothesis worth testing against an actual life.</p>
+          <p>In one-to-one work, a profile like this is the beginning of the conversation, not the end of it. It gets tested against your actual relationships, decisions, avoidance patterns, and the places you already half-know something isn't working — until a vague pattern becomes something specific enough to actually train.</p>
+          <div class="flex flex-wrap gap-2.5 mt-6">
+            <span class="tag">Read more: the mechanism</span>
+            <span class="tag">Read more: how the training works</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5"><div class="hairline"></div></section>
+
+    <!-- CTA -->
+    <section class="container mx-auto px-5 py-24">
+      <div class="max-w-2xl">
+        <div class="section-label mb-4">Start here</div>
+        <h2 class="display-serif text-4xl md:text-5xl mb-6">Twenty minutes. Genuinely free.</h2>
+        <p class="text-soft text-lg mb-8">No login, no email required to see your results, nothing stored on our end. Answer honestly — the value of the report depends entirely on that.</p>
+        <a href="https://holistic-overview.replit.app" target="_blank" rel="noopener" class="cta-primary inline-flex justify-center px-6 py-3.5 rounded-xl text-sm font-medium">Take the free profile</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t line">
+    <div class="container mx-auto px-5 h-20 flex items-center justify-between text-sm text-faint">
+      <p>© <span id="year"></span> The Good For Nothing Project · Dr. Petar Milojev</p>
+      <a href="/" class="hover:text-white">Back to home</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
